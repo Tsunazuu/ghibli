@@ -1,25 +1,17 @@
-let searchFunction = document.querySelector("#search")
+var request = new XMLHttpRequest()
 
-searchFunction.addEventListener("click", () =>{
-  console.log("Search Activated")
-  sendApiRequest()
-})
+request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
+request.onload = function () {
+  // Begin accessing JSON data here
+  var data = JSON.parse(this.response)
 
-async function sendApiRequest(){
-  let response = await fetch ("'https://ghibliapi.herokuapp.com/films")
-  console.log(response)
-  let data = await response.json()
-  console.log(data)
-  userApiData(data)
+  if (request.status >= 200 && request.status < 400) {
+    data.forEach((movie) => {
+      console.log(movie.title)
+    })
+  } else {
+    console.log('error')
+  }
 }
 
-function userApiData(data){
-    document.querySelector("#content").innerHTML = `
-    <div class="display" style="width: 200px;">
-  <img src="${data.hits[0].movie}" class="display-image" alt="">
-  <div class="display-body">
-   <h1 class="display-title">${data.hits[0].movie}</h1>
-   <p class="display-text">Movie/Show's backstory and other basic information.</p>
-  </div>
-</div>
-`}
+request.send()

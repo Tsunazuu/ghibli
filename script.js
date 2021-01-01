@@ -1,17 +1,28 @@
-var request = new XMLHttpRequest()
-
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
-request.onload = function () {
-  // Begin accessing JSON data here
-  var data = JSON.parse(this.response)
-
-  if (request.status >= 200 && request.status < 400) {
-    data.forEach((movie) => {
-      console.log(movie.title)
+function fetchData() {
+  fetch("https://ghibliapi.herokuapp.com/films")
+    .then(response => {
+      if (!response.ok) {
+        throw Error("ERROR");
+      }
+      return response.json();
     })
-  } else {
-    console.log('error')
-  }
+    .then(data => {
+      console.log(data);
+      const html = data
+        .map(movie => {
+          return `
+          <div class="movie">
+            <p>${movie.description}</p>
+          </div>
+          `;
+        })
+        .join("");
+        console.log(html);
+        document.querySelector("#app").insertAdjacentHTML("afterbegin", html);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 }
 
-request.send()
+fetchData();

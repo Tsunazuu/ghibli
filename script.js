@@ -12,6 +12,7 @@ function fetchData() {
         .map(movie => {
           return `
           <div class="movie">
+            <h1>${movie.title}</h1>
             <p>${movie.description}</p>
           </div>
           `;

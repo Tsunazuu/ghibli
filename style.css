@@ -1,68 +1,394 @@
+html {
+  zoom: 100%;
+}
 
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    margin-bottom: 0;
-    background-color: #fff;
-  }
-  
-  .jumbotron p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .jumbotron-heading {
-    font-weight: 300;
-  }
-  
-  .jumbotron .container {
-    max-width: 40rem;
-  }
-  
-  .album {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-color: #f7f7f7;
-  }
-  
+.card {
+  margin: 0.5rem;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+  background-image: linear-gradient(120deg, #add8e6 0%, #fecfef 100%);
+
+}
+
+
+.card-text {
+  width: 100%;
+  padding-top:30px;
+  text-align: center;
+  font-size: 90%;
+  font-family: 'Playfair Display', serif;
+}
+
+.cardimage {
+  top: 20px;
+  position: relative;
+  left:70px;
+}
+
+.cardimg {
+  position: relative;
+  left: 193px;
+  top: 20px;
+
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+body {
+  background-image: url("Images/idasg1BG.png");
+}
+
+.logo {
+  padding-left: 1.5%;
+  padding-top:3%;
+}
+
+.abouth1 {
+  font-family: 'Nunito', sans-serif;
+  padding-bottom: 3%;
+  color: white;
+}
+
+.aboutp {
+  font-family: 'Comfortaa', cursive;
+  color: white;
+}
+
+.about {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:40px;
+}
+
+.menu-bar {
+  padding: 0;
+  margin: 0;
+  background:white;
+}
+
+.menu-bar ul {
+  display:inline-flex;
+  list-style:none;
+  color:black;
+}
+
+.menu-bar ul li {
+  margin:5px;
+  padding:15px;
+  margin-left: 50px;
+  font-family:"comfortaa","cursive"
+}
+
+.menu-bar ul li a {
+  text-decoration:none;
+  color:black;
+}
+
+.menu-bar ul li:hover {
+  background:beige;
+
+}
+
+.sub-menu-1 {
+  display:none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display:block;
+  position:absolute;
+  background:beige;
+  margin-top:10px;
+  margin-left:-15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  border-bottom:1px dotted black;
+  background:transparent;
+  border-radius:0;
+  text-align:left;
+  font-family:"comfortaa","cursive"
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom:none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color:blue;
+}
+
+.sub-menu-2 {
+  display:none;
+}
+
+.hover-me:hover .sub-menu-2{
+  position:absolute;
+  display: block;
+  margin-top:10px;
+  margin-left:-140px;
+  background:beige;
+}
+
+.hover-me:hover .sub-menu-2 ul{
+  display: block;
+}
+
+.hover-a:hover .sub-menu-2{
+  position:absolute;
+  display: block;
+  margin-top:10px;
+  margin-left:-140px;
+  background:beige;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.hover-a:hover .sub-menu-2 ul{
+  display: block;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  border-bottom:1px dotted black;
+  background:transparent;
+  border-radius:0;
+  text-align:left;
+  font-family:"comfortaa","cursive"
+}
+
+#arrietty,#castle,#from,#grave,#howls,#kikis,#totoro,#yamadas,#only,#porco,#pom,#mononoke,#ponyo,#spirited,#cat,#tales,#kaguya,#wind,#when,#whisper {
+  position: relative;
+  display:block;
+  left:0;
+  top:-100px;
+
+}
+
+@media only screen and (min-width: 900px) {
   .card {
-
-    display: inline-block;
-    width: 23%;
-    padding: .75rem;
-    margin-bottom: 2rem;
-    border: 0;
-
-
+    flex: 1 1 calc(33% - 2rem);
   }
-  
-  .card > img {
-    align-content: center;
-    margin-bottom: .75rem;
-    max-width: 100%;
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .card {
+    display: flex;
+    flex-direction: column;
   }
-  
-  .card-text {
-    width:100%;
-    text-align: center;
-    font-size: 100%;
+
+  .container {
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .logo {
+    padding-left: 1.5%;
+    margin-top:20px;
   }
 
   .cardimage {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
+    top: 20px;
+    position: relative;
+    left:0px;
   }
   
+  .cardimg {
+    position: relative;
+    left: 0px;
+    top: 20px;
+  
+  }
+
+  .menu-bar ul li {
+    margin:5px;
+    padding:15px;
+    margin-left: -22px;
+    font-family:"comfortaa","cursive"
+  }
+
+  .menu-bar ul li a {
+    text-decoration:none;
+    color:black;
+  }
+  
+  .menu-bar ul li:hover {
+    background:beige;
+  
+  }
+  
+  .sub-menu-1 {
+    display:none;
+  }
+  
+  .menu-bar ul li:hover .sub-menu-1 {
+    display:block;
+    position:absolute;
+    background:beige;
+    margin-top:10px;
+    margin-left:-15px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-bar ul li:hover .sub-menu-1 ul li {
+    border-bottom:1px dotted black;
+    background:transparent;
+    border-radius:0;
+    text-align:left;
+    font-family:"comfortaa","cursive"
+  }
+  
+  .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom:none;
+  }
+  
+  .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color:blue;
+  }
+  
+  .sub-menu-2 {
+    display:none;
+  }
+  
+  .hover-me:hover .sub-menu-2{
+    position:absolute;
+    display: block;
+    margin-top:10px;
+    margin-left:-140px;
+    background:beige;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .hover-me:hover .sub-menu-2 ul{
+    display: block;
+  }
+
+  .hover-a:hover .sub-menu-2{
+    position:absolute;
+    display: block;
+    margin-top:10px;
+    margin-left:-63px;
+    background:beige;
+  }
+  
+  .hover-a:hover .sub-menu-2 ul{
+    display: block;
+  }
+  
+  .menu-bar ul li:hover .sub-menu-1 ul li {
+    border-bottom:1px dotted black;
+    background:transparent;
+    border-radius:0;
+    text-align:left;
+    font-family:"comfortaa","cursive"
+  }
+
+
+
+  /*html {
+    zoom: 100%;
+  }
+
+  .card {
+    margin: 0.5rem;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+    background-image: linear-gradient(120deg, #add8e6 0%, #fecfef 100%);
+
+  }
+
+
+  .card-text {
+    width: 100%;
+    text-align: center;
+    font-size: 90%;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .cardimage {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+  }
+
+  .cardimg {
+    padding-top: 20px;
+
+  }
+
   footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  
+
   footer p {
     margin-bottom: .25rem;
   }
 
-  body{
+  body {
     background-image: url("Images/idasg1BG.png");
   }
+
+  .logo {
+    padding-left: 1.5%;
+  }
+
+  .abouth1 {
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 3%;
+    color: white;
+  }
+
+  .aboutp {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+  }
+
+  .about {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }*/
+
+}

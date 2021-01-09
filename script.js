@@ -147,7 +147,7 @@ $(document).ready(function () {
             <p>${movie.description}</p>
 
             <div class="img">
-              <image src="Images/CastleInTheSky.JPG" width="500px" height="750px"> </image>
+              <image src="Images/CastleInTheSky.JPG" width="500px" height="700px"> </image>
             </div>
             </div>
 
@@ -223,7 +223,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/GraveOfTheFireflies.jpg" width="500px" height="750px"> </image>
+          <image src="Images/GraveOfTheFireflies.jpg" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -259,7 +259,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/MyNeighbourTotoro.JPG" width="500px" height="750px"> </image>
+          <image src="Images/MyNeighbourTotoro.JPG" width="500px" height="700px"> </image>
           </div>
           
 
@@ -333,8 +333,8 @@ $(document).ready(function () {
           <h1>${movie.title}</h1>
           <p>${movie.description}</p>
 
-          <div class="img">
-          <image src="Images/KikisDeliveryService.JPG" width="500px" height="750px"> </image>
+          <div class="imgkiki">
+          <image src="Images/KikisDeliveryService.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -395,8 +395,8 @@ $(document).ready(function () {
           <h1>${movie.title}</h1>
           <p>${movie.description}</p>
 
-          <div class="img">
-          <image src="Images/OnlyYesterday.JPG" width="500px" height="750px"> </image>
+          <div class="imgonly">
+          <image src="Images/OnlyYesterday.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -432,7 +432,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/PorcoRosso.JPG" width="500px" height="750px"> </image>
+          <image src="Images/PorcoRosso.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -495,7 +495,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/PomPoko.JPG" width="500px" height="750px"> </image>
+          <image src="Images/PomPoko.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -530,8 +530,8 @@ $(document).ready(function () {
           <h1>${movie.title}</h1>
           <p>${movie.description}</p>
 
-          <div class="img">
-          <image src="Images/WhisperOfTheHeart.JPG" width="500px" height="750px"> </image>
+          <div class="imgheart">
+          <image src="Images/WhisperOfTheHeart.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -594,7 +594,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/PrincessMononoke.JPG" width="500px" height="750px"> </image>
+          <image src="Images/PrincessMononoke.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -665,7 +665,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/MyNeighboursTheYamadas.JPG" width="500px" height="750px"> </image>
+          <image src="Images/MyNeighboursTheYamadas.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -701,7 +701,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/SpiritedAway.JPEG" width="500px" height="750px"> </image>
+          <image src="Images/SpiritedAway.JPEG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -737,7 +737,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/TheCatReturns.JPG" width="500px" height="750px"> </image>
+          <image src="Images/TheCatReturns.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -805,8 +805,8 @@ $(document).ready(function () {
           <h1>${movie.title}</h1>
           <p>${movie.description}</p>
 
-          <div class="img">
-          <image src="Images/HowlsMovingCastle.JPG" width="500px" height="750px"> </image>
+          <div class="imghowl">
+          <image src="Images/HowlsMovingCastle.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -841,8 +841,8 @@ $(document).ready(function () {
           <h1>${movie.title}</h1>
           <p>${movie.description}</p>
 
-          <div class="img">
-          <image src="Images/TalesFromEarthsea.JPG" width="500px" height="750px"> </image>
+          <div class="imgheart">
+          <image src="Images/TalesFromEarthsea.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -877,8 +877,8 @@ $(document).ready(function () {
           <h1>${movie.title}</h1>
           <p>${movie.description}</p>
 
-          <div class="img">
-          <image src="Images/Ponyo.JPG" width="500px" height="750px"> </image>
+          <div class="imgheart">
+          <image src="Images/Ponyo.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -940,8 +940,8 @@ $(document).ready(function () {
           <h1>${movie.title}</h1>
           <p>${movie.description}</p>
 
-          <div class="img">
-          <image src="Images/Arrietty.JPG" width="500px" height="750px"> </image>
+          <div class="imgarrietty">
+          <image src="Images/Arrietty.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -1005,7 +1005,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/FromUpOnPoppyHill.JPG" width="500px" height="750px"> </image>
+          <image src="Images/FromUpOnPoppyHill.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -1040,8 +1040,8 @@ $(document).ready(function () {
           <h1>${movie.title}</h1>
           <p>${movie.description}</p>
 
-          <div class="img">
-          <image src="Images/TheWindRises.JPG" width="500px" height="750px"> </image>
+          <div class="imgkiki">
+          <image src="Images/TheWindRises.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -1077,7 +1077,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/TheTaleOfThePrincessKaguya.JPG" width="500px" height="750px"> </image>
+          <image src="Images/TheTaleOfThePrincessKaguya.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>
@@ -1113,7 +1113,7 @@ $(document).ready(function () {
           <p>${movie.description}</p>
 
           <div class="img">
-          <image src="Images/WhenMarnieWasThere.JPG" width="500px" height="750px"> </image>
+          <image src="Images/WhenMarnieWasThere.JPG" width="500px" height="700px"> </image>
           </div>
 
         </div>

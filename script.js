@@ -1,5 +1,6 @@
-/*fetch data for Castle In The Sky*/
 $(document).ready(function () {
+
+  /* check if local storage has item, if yes fetch. Remove item after. */
 
   localStorage.getItem("fetchCastleInTheSky");
   if (localStorage.getItem("fetchCastleInTheSky") === "true") {
@@ -125,6 +126,7 @@ $(document).ready(function () {
     localStorage.removeItem("fetchWhenMarnieWasThere");
   }
 
+/* Function to fetch Castle in the Sky*/
 
   function fetchCastleInTheSky() {
 
@@ -137,8 +139,7 @@ $(document).ready(function () {
         return response.json();
       })
       .then(data => {
-        //@[cher] hiding this first
-        //console.log(data);
+        console.log(data)
         const html = [data]
           .map(movie => {
             return `
@@ -154,8 +155,7 @@ $(document).ready(function () {
           `;
           })
           .join("");
-        //@TODO[cher] hiding this first
-        // console.log(html);
+          console.log(html)
         document.querySelector("#app").insertAdjacentHTML("beforebegin", html);
       })
       .catch(error => {
@@ -202,7 +202,7 @@ $(document).ready(function () {
       });
   }
 
-  /*fetch data for Grave of the Fireflies*/
+  /*Function to fetch Grave of the Fireflies*/
 
   function fetchGraveOfTheFireflies() {
     fetch("https://ghibliapi.herokuapp.com/films/12cfb892-aac0-4c5b-94af-521852e46d6a")
@@ -238,6 +238,7 @@ $(document).ready(function () {
       });
   }
 
+/*Function to fetch My Neighbour Totoro*/
 
   function fetchMyNeighbourTotoro() {
     fetch("https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49")
@@ -274,6 +275,7 @@ $(document).ready(function () {
         console.log(error);
       });
 
+    /*fetch characters*/  
 
     Promise.all([
         fetch("https://ghibliapi.herokuapp.com/people/986faac6-67e3-4fb8-a9ee-bad077c2e7fe").then(resp => resp.json()),
@@ -314,6 +316,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Kiki's Delivery Service*/
 
   function fetchKikisDeliveryService() {
     fetch("https://ghibliapi.herokuapp.com/films/ea660b10-85c4-4ae3-8a5f-41cea3648e3e")
@@ -348,6 +351,7 @@ $(document).ready(function () {
         console.log(error);
       });
 
+    /*fetch characters*/
 
     Promise.all([
         fetch("https://ghibliapi.herokuapp.com/people/7151abc6-1a9e-4e6a-9711-ddb50ea572ec").then(resp => resp.json()),
@@ -376,6 +380,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Only Yesterday*/
 
   function fetchOnlyYesterday() {
     fetch("https://ghibliapi.herokuapp.com/films/4e236f34-b981-41c3-8c65-f8c9000b94e7")
@@ -412,6 +417,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Porco Rosso*/
 
   function fetchPorcoRosso() {
     fetch("https://ghibliapi.herokuapp.com/films/ebbb6b7c-945c-41ee-a792-de0e43191bd8")
@@ -446,6 +452,7 @@ $(document).ready(function () {
         console.log(error);
       });
 
+    /*fetch characters*/  
 
     Promise.all([
         fetch("https://ghibliapi.herokuapp.com/people/6523068d-f5a9-4150-bf5b-76abe6fb42c3").then(resp => resp.json()),
@@ -475,6 +482,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Pom Poko*/
 
   function fetchPomPoko() {
     fetch("https://ghibliapi.herokuapp.com/films/1b67aa9a-2e4a-45af-ac98-64d6ad15b16c")
@@ -511,6 +519,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Whisper of the Heart*/
 
   function fetchWhisperOfTheHeart() {
     fetch("https://ghibliapi.herokuapp.com/films/ff24da26-a969-4f0e-ba1e-a122ead6c6e3")
@@ -545,6 +554,7 @@ $(document).ready(function () {
         console.log(error);
       });
 
+    /*fetch characters*/    
 
     Promise.all([
         fetch("https://ghibliapi.herokuapp.com/people/fc196c4f-0201-4ed2-9add-c6403f7c4d32").then(resp => resp.json()),
@@ -574,6 +584,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Princess Mononoke*/
 
   function fetchPrincessMononoke() {
     fetch("https://ghibliapi.herokuapp.com/films/0440483e-ca0e-4120-8c50-4c8cd9b965d6")
@@ -608,6 +619,7 @@ $(document).ready(function () {
         console.log(error);
       });
 
+    /*fetch characters*/  
 
     Promise.all([
         fetch("https://ghibliapi.herokuapp.com/people/ba924631-068e-4436-b6de-f3283fa848f0").then(resp => resp.json()),
@@ -645,6 +657,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch My Neighbours The Yamadas*/
 
   function fetchMyNeighboursTheYamadas() {
     fetch("https://ghibliapi.herokuapp.com/films/45204234-adfd-45cb-a505-a8e7a676b114")
@@ -681,6 +694,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Spirited Away*/
 
   function fetchSpiritedAway() {
     fetch("https://ghibliapi.herokuapp.com/films/dc2e6bd1-8156-4886-adff-b39e6043af0c")
@@ -717,6 +731,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch The Cat Returns*/
 
   function fetchTheCatReturns() {
     fetch("https://ghibliapi.herokuapp.com/films/90b72513-afd4-4570-84de-a56c312fdf81")
@@ -751,6 +766,7 @@ $(document).ready(function () {
         console.log(error);
       });
 
+    /*fetch characters*/    
 
     Promise.all([
         fetch("https://ghibliapi.herokuapp.com/people/6b3facea-ea33-47b1-96ce-3fc737b119b8").then(resp => resp.json()),
@@ -786,6 +802,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Howl's Moving Castle*/
 
   function fetchHowlsMovingCastle() {
     fetch("https://ghibliapi.herokuapp.com/films/cd3d059c-09f4-4ff3-8d63-bc765a5184fa")
@@ -822,6 +839,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Tales From Earthsea*/
 
   function fetchTalesFromEarthsea() {
     fetch("https://ghibliapi.herokuapp.com/films/112c1e67-726f-40b1-ac17-6974127bb9b9")
@@ -858,6 +876,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Ponyo*/
 
   function fetchPonyo() {
     fetch("https://ghibliapi.herokuapp.com/films/758bf02e-3122-46e0-884e-67cf83df1786")
@@ -892,6 +911,7 @@ $(document).ready(function () {
         console.log(error);
       });
 
+    /*fetch characters*/  
 
     Promise.all([
         fetch("https://ghibliapi.herokuapp.com/people/a10f64f3-e0b6-4a94-bf30-87ad8bc51607").then(resp => resp.json()),
@@ -921,6 +941,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch Arrietty*/
 
   function fetchArrietty() {
     fetch("https://ghibliapi.herokuapp.com/films/2de9426b-914a-4a06-a3a0-5e6d9d3886f6")
@@ -955,6 +976,7 @@ $(document).ready(function () {
         console.log(error);
       });
 
+    /*fetch characters*/  
 
     Promise.all([
         fetch("https://ghibliapi.herokuapp.com/people/89026b3a-abc4-4053-ab1a-c6d2eea68faa").then(resp => resp.json()),
@@ -985,6 +1007,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch From Up on Poppy Hill*/
 
   function fetchFromUpOnPoppyHill() {
     fetch("https://ghibliapi.herokuapp.com/films/45db04e4-304a-4933-9823-33f389e8d74d")
@@ -1021,6 +1044,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch The Wind Rises*/
 
   function fetchTheWindRises() {
     fetch("https://ghibliapi.herokuapp.com/films/67405111-37a5-438f-81cc-4666af60c800")
@@ -1057,6 +1081,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch The Tale of The Princess Kaguya*/
 
   function fetchTheTaleOfThePrincessKaguya() {
     fetch("https://ghibliapi.herokuapp.com/films/578ae244-7750-4d9f-867b-f3cd3d6fecf4")
@@ -1093,6 +1118,7 @@ $(document).ready(function () {
 
   }
 
+  /*Function to fetch When Marnie Was There*/
 
   function fetchWhenMarnieWasThere() {
     fetch("https://ghibliapi.herokuapp.com/films/5fdfb320-2a02-49a7-94ff-5ca418cae602")
@@ -1129,7 +1155,8 @@ $(document).ready(function () {
 
   }
 
-  //@[cher] either use an id or class then use jquery event listener
+/* Upon clicking an image, set item in local storage. Then redirect user to next page. */
+
   $("#fetchsky").on("click", function (e) {
     e.preventDefault();
     console.log('sky clicked');
@@ -1290,4 +1317,5 @@ $(document).ready(function () {
 
 
   })
+
 });
